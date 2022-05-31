@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOOPS</title>
+    <link rel="stylesheet" type="text/css" href="purchase.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="../images/logo.png" alt="" id="logo">
+            <nav>
+                <ul id="navbarList">
+                    <li>
+                        <a href="../main.html">Home</a>
+                        <ul>
+                            <li><a href="#newArrival">New Arrival</a></li>
+                            <li><a href="#bestSeller">Best Seller</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="../shoes.html">Shoes</a>
+                        <ul>
+                            <li><a href="../shoes.html">ADIDAS</a></li>
+                            <li><a href="../shoes.html">NIKE</a></li>
+                            <li><a href="../shoes.html">JORDAN</a></li>
+                            <li><a href="../shoes.html">UNDER ARMOUR</a></li>
+                            <li><a href="../shoes.html">PUMA</a></li>
+                            <li><a href="../shoes.html">CONVERSE</a></li>
+                            <li><a href="../shoes.html">MCDAVID</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="../accesories.html">Accesories</a>
+                        <ul>
+                            <li><a href="../jerseyacc.html">Jersey</a></li>
+                            <li><a href="../basketacc.html">Basketball</a></li>
+                            <li><a href="../jacketacc.html">Jacket</a></li>
+                            <li><a href="../kneeacc.html">Knee Support</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li><a href="/cart.html"><img src="/images/shopping-cart.svg" alt=""></a></li> -->
+                    <!-- <li><a href="">Sign In</a></li> -->
+                    <!-- <li><a href="profile.html">Register</a></li> -->
+                    <li><a href="../profile.html"> <img src="../images/user.svg" alt=""> Sign In</a></li>
+                </ul>
+            </nav>
+            <img src="../images/menu.svg" alt="" id="menu" onclick="toogleMenu()">
+        </div>
+
+        <div class="content">
+            <div class="prod">
+                <div class="foto"><img src="../images/knee5.jpg" alt=""></div>
+                <div class="detail">
+                    <div class="nama">
+                        <h2>3D Adjustable Knee Brace Bandage</h2>
+                    </div>
+                    <div class="harga">
+                        <h3>Rp 327.746</h3>
+                    </div>
+                    <div class="qty">
+                        <b>QUANTITY</b>
+                        <select class="qty">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>  
+                    </div>  
+                    <div class="size">
+                        <b>SIZE</b>
+                        <form action="" method="GET">
+                            <input type="radio" id="40" name="ukuran" value="40" />
+                            <label for="40">M</label>
+                            <input type="radio" id="41" name="ukuran" value="41" />
+                            <label for="41">L</label>
+                        </form>
+                    </div>
+                    <button type="submit" class="add">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="checkout">    
+                <div class="total">
+                    <h2>TOTAL</h2>
+                </div>    
+                <div class="promo">
+                    <h3>PROMO CODE</h3>
+                    <input type="text" name="promocode" class="form-control">
+                </div>
+                <div class="totalprice">
+                    <b>TOTAL</b>   Rp 327.746<br>
+                    <b>SALE</b>    Rp 0
+                    <hr color="orange" size="5px">
+                    <b>TOTAL</b>   Rp 327.746
+                </div>    
+                <div class="form">
+                    <h3>DELIVERY FORM</h3>
+                    <form name="formPendaftaran" action="/home.html" method="GET" onsubmit="return validateForm()">
+                        <div class="form-group">
+                            <label>NAME</label><br>
+                            <input type="text" name="nama" placeholder="Full Name" class="form-control" maxlength="40" minlength="3">
+                        </div>
+                        <div class="form-group">
+                            <label>EMAIL</label><br>
+                            <input type="email" name="email" placeholder="Active Email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>PHONE NUMBER</label><br>
+                            <input type="tel" name="nomor" placeholder="Active Number" class="form-control" maxlength="12" minlength="11">
+                        </div>
+                        <div class="form-group">
+                            <label>ADDRESS</label><br>
+                            <textarea name="alamat" placeholder="Full Address" class="form-control"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>POSTAL CODE</label><br>
+                            <input type="tel" name="kodepos" class="form-control" minlength="5" maxlength="5">
+                        </div>
+                        <div class="form-group">
+                            <label>NOTE</label><br>
+                            <textarea name="note" placeholder="Notes for HOOPS" class="form-control" maxlength="100"></textarea>
+                        </div>
+                        <button type="submit" class="button">CONTINUE TO PAYMENT </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+                   
+        <div class="footer">
+            <div class="footerL">
+                    <div class="footerLtop">
+                        <h3>VISIT US</h3>
+                    </div>
+                    <div class="footerLbott">
+                        <a href="https://www.instagram.com/hoops.indonesia/?hl=en" target="_blank"><img src="../images/ig.svg" alt=""></a>
+                        <a href="https://www.facebook.com/HOOPSnyaINDONESIA/" target="_blank"><img src="../images/facebook.svg" alt=""></a>
+                        <a href="https://www.youtube.com/channel/UCvT_n77D_IgTz1vH0ILxpLg" target="_blank"><img src="../images/yt.svg" alt=""></a>
+                    </div>
+            </div>
+
+            <div class="footerM">
+                <div class="footerMtop">
+                    <h3>CONTACT US</h3>
+                </div>
+                <div class="footerMbott">
+                    <a href="" target="_blank"><img src="../images/whatsapp.svg" alt=""></a>
+                    <a href="" target="_blank"><img src="../images/email.svg" alt=""></a>
+                </div>
+            </div>
+
+            <div class="footerR">
+                <a href="FAQ.html"><img src="../images/faq.svg" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <script src="cart.js"></script>
+</body>
+</html>

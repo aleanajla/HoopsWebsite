@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOOPS</title>
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+    <!-- <script src="main.js"></script> -->
+
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="images/logo.png" alt="" id="logo">
+            <nav>
+                <ul id="navbarList">
+                    <li>
+                        <a href="main.html">Home</a>
+                        <ul>
+                            <li><a href="main.html">New Arrival</a></li>
+                            <li><a href="main.html">Best Seller</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="/shoes.html">Shoes</a>
+                        <ul>
+                            <li><a href="/shoes.html">ADIDAS</a></li>
+                            <li><a href="/shoes.html">NIKE</a></li>
+                            <li><a href="/shoes.html">JORDAN</a></li>
+                            <li><a href="/shoes.html">UNDER ARMOUR</a></li>
+                            <li><a href="/shoes.html">PUMA</a></li>
+                            <li><a href="/shoes.html">CONVERSE</a></li>
+                            <li><a href="/shoes.html">MCDAVID</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="/accesories.html">Accesories</a>
+                        <ul>
+                            <li><a href="/jerseyacc.html">Jersey</a></li>
+                            <li><a href="/basketacc.html">Basketball</a></li>
+                            <li><a href="/jacketacc.html">Jacket</a></li>
+                            <li><a href="/kneeacc.html">Knee Support</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li><a href=""><img src="images/shopping-cart.svg" alt=""></a></li> -->
+                    <li><a href="profile.html"> <img src="images/user.svg" alt=""> Sign In</a></li>
+                </ul>
+            </nav>
+            <img src="images/menu.svg" alt="" id="menu" onclick="toogleMenu()">
+        </div>
+        <div class="form">
+            <div class="regis">
+                <center>
+                <h1 id="title">REGISTER</h1>
+                <form action="main.html" method="PO">
+                    <table>
+                        <tr class="name">
+                            <td>Full Name</td>
+                            <td><input type="text" name="name" placeholder="Full Name" minlength="5" maxlength="20"></td>
+                        </tr>
+    
+                        <tr class="email">
+                            <td>Email</td>
+                            <td><input type="email" name="email" placeholder="Email"></td>
+                        </tr>
+    
+                        <tr class="pass">
+                            <td>Password</td>
+                            <td><input type="password" name="password" placeholder="Password" minlength="6" maxlength="12"></td>
+                        </tr>
+    
+                        <tr class="confirmPass">
+                            <td>Confirm Password</td>
+                            <td><input type="password" name="confirmPass" placeholder="Confirm Password" minlength="6"></td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">
+                                <input type="checkbox" name="agree" value="true" id="agree">
+                                <label for="agree">I agree to the term and conditions</label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <p id="errorMessage"></p>
+                            </td>
+                        </tr>
+    
+                        <tr class="submit">
+                            <td></td>
+                            <td colspan="2">
+                                <input type="submit" value="submit">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </center>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footerL">
+                    <div class="footerLtop">
+                        <h3>VISIT US</h3>
+                    </div>
+                    <div class="footerLbott">
+                        <a href="https://www.instagram.com/hoops.indonesia/?hl=en" target="_blank"><img src="images/ig.svg" alt=""></a>
+                        <a href="https://www.facebook.com/HOOPSnyaINDONESIA/" target="_blank"><img src="images/facebook.svg" alt=""></a>
+                        <a href="https://www.youtube.com/channel/UCvT_n77D_IgTz1vH0ILxpLg" target="_blank"><img src="images/yt.svg" alt=""></a>
+                    </div>
+            </div>
+
+            <div class="footerM">
+                <div class="footerMtop">
+                    <h3>CONTACT US</h3>
+                </div>
+                <div class="footerMbott">
+                    <a href="" target="_blank"><img src="images/whatsapp.svg" alt=""></a>
+                    <a href="" target="_blank"><img src="images/email.svg" alt=""></a>
+                </div>
+            </div>
+
+            <div class="footerR">
+                <a href="FAQ.html"><img src="images/faq.svg" alt=""></a>
+            </div>
+        </div>
+    <script src="main.js"></script>
+</body>
+</html>
